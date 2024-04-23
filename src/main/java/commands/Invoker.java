@@ -11,16 +11,10 @@ public class Invoker {
 
     public static void registerCommands() {
         AddStudentCommand addStudentCommand = new AddStudentCommand();
-        AddStudentForCourseCommand addStudentForCourseCommand = new AddStudentForCourseCommand();
         DeleteStudentCommand deleteStudentCommand = new DeleteStudentCommand();
-        FindStudentsWithCourseCommand findStudentsWithCourseCommand = new FindStudentsWithCourseCommand();
 
-        commandMap.put(findStudentsWithCourseCommand.name(), findStudentsWithCourseCommand);
         commandMap.put(addStudentCommand.name(), addStudentCommand);
-        commandMap.put(addStudentForCourseCommand.name(), addStudentForCourseCommand);
-        commandMap.put(addStudentForCourseCommand.name(), addStudentForCourseCommand);
         commandMap.put(deleteStudentCommand.name(), deleteStudentCommand);
     }
-
 
 }
